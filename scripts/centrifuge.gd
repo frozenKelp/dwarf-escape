@@ -52,14 +52,17 @@ func _process(delta: float) -> void:
 	else:
 		state = STATE.UNSTABLE  # too fast
 #endregion
-	
+
 	if state == STATE.HOLD:
 		progress += delta
 	elif state == STATE.UNSTABLE:
 		instability += delta
-	
-	
+
+
+
+
 	var mouse_pos = get_local_mouse_position()
 	var mouse_angular_velocity = mAngVel(mouse_pos, delta)
 	sprite_rotate(mouse_angular_velocity, delta)
 	print(progress,instability)
+	

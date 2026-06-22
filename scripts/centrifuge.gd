@@ -8,6 +8,8 @@ var state := STATE.EMPTY #CENTRIFUGE STATE
 # target band:
 var target_min := 30.0
 var target_max := 45.0
+var progress := 0
+var instability := 0
 
 # gets mouse angular velocity
 var last_mouse_position := get_local_mouse_position()
@@ -17,11 +19,12 @@ func mAngVel(mouse_position, time):
 	var mouse_angular_velocity = deltaAngle/time
 	print("mouse ang.velocity in rad/sec: ", snapped(mouse_angular_velocity, 0.01)) # snapped is approx
 	
+#region allowed ring
 	if mouse_position.length() < allow_radius:
 		last_mouse_position = mouse_position   # avoids a spike on re-entry
 		return 0.0 
+#endregion
 	return mouse_angular_velocity # in rad/sec
-	
 
 # rotates sprite
 var aa = 3
@@ -36,6 +39,10 @@ func sprite_rotate(mav, time):
 	print(angular_accleration)
 	angular_velocity = move_toward(angular_velocity, mav, angular_accleration * time)
 	sprite.rotation += angular_velocity*time
+
+
+
+
 
 
 

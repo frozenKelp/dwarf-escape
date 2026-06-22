@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bah8xhlj5g1qr"]
+
+[ext_resource type="PackedScene" uid="uid://tilvrqmdfiry" path="res://scenes/Centrifuge.tscn" id="1_ibkli"]
+
+[node name="Node2D" type="Node2D" unique_id=180435680]
+
+[node name="Centrifuge" parent="." unique_id=2089884337 instance=ExtResource("1_ibkli")]
+position = Vector2(641, 80)
+
+[node name="Camera2D" type="Camera2D" parent="Centrifuge" unique_id=1956576902]
+position = Vector2(-4, -1)

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://tilvrqmdfiry"]
+
+[ext_resource type="Script" uid="uid://bnsm618bp2qpg" path="res://scripts/centrifuge.gd" id="1_4dvvg"]
+[ext_resource type="Texture2D" uid="uid://gepgdx8pb6xg" path="res://dump/centrifuge.png" id="2_rnjyy"]
+[ext_resource type="Script" uid="uid://d1e5ee4w3x8bd" path="res://scripts/centrifuge_sprite.gd" id="3_rnjyy"]
+
+[node name="Node2D" type="Node2D" unique_id=2089884337]
+
+[node name="centrifuge" type="Node2D" parent="." unique_id=1682589940]
+position = Vector2(440, 272)
+script = ExtResource("1_4dvvg")
+
+[node name="Sprite" type="Sprite2D" parent="centrifuge" unique_id=1621205359]
+texture = ExtResource("2_rnjyy")
+offset = Vector2(0, 64)
+script = ExtResource("3_rnjyy")

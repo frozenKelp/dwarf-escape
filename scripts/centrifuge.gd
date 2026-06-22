@@ -1,7 +1,7 @@
 extends Node2D
 @onready var sprite: Sprite2D = $Sprite
 
-const allow_radius = 200
+const allow_radius = 100
 
 enum STATE { EMPTY, SPIN_UP, HOLD, UNSTABLE } #constants
 var state := STATE.EMPTY #CENTRIFUGE STATE

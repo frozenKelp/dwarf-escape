@@ -17,7 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Gamestate="*uid://cknp70w05srh7"
+Game="*uid://cknp70w05srh7"
+Player="*uid://ckx87k678xoa3"
+Manager="*uid://i028ctbnwgog"
 
 [display]
 

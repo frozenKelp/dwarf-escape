@@ -8,7 +8,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	print("sprite velocity : ", say_vel(delta))
+	print("velocity: ", say_vel(delta))
 	
 var oldangle = self.rotation
 func say_vel(time):

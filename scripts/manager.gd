@@ -53,6 +53,6 @@ func _on_lost() -> void:
 	_set_screen(Screen.LOST)
 
 
-func _set_screen(s: int) -> void:
+func _set_screen(s: Screen) -> void:
 	screen = s
 	screen_changed.emit(s)

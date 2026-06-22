@@ -7,14 +7,19 @@
 
 [node name="Centrifuge" type="Node2D" unique_id=2089884337]
 
+[node name="limiter" type="Node2D" parent="." unique_id=1352673646]
+scale = Vector2(2, 2)
+
+[node name="ring" type="Sprite2D" parent="limiter" unique_id=1147823125]
+texture = ExtResource("4_4vge2")
+
 [node name="centrifuge" type="Node2D" parent="." unique_id=1682589940]
 script = ExtResource("1_4dvvg")
+loaded = "iron"
 
 [node name="Sprite" type="Sprite2D" parent="centrifuge" unique_id=1621205359]
 texture = ExtResource("2_rnjyy")
 offset = Vector2(0, 64)
 script = ExtResource("3_rnjyy")
 
-[node name="ring" type="Sprite2D" parent="centrifuge" unique_id=1147823125]
-scale = Vector2(2, 2)
-texture = ExtResource("4_4vge2")
+[node name="feeder" type="Node2D" parent="." unique_id=1359008053]
